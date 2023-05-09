@@ -1,7 +1,8 @@
-public class OZU {
+public class OZU extends Price{
     int volumeMemory;
 
-    public OZU(int volumeMemory){
+    public OZU(int volumeMemory, int price){
+        super(price);
         this.volumeMemory = volumeMemory;
     }
 
@@ -9,6 +10,7 @@ public class OZU {
     public String toString() {
         return "OZU{" +
                 "volumeMemory=" + volumeMemory +
+                ", price=" + price +
                 '}';
     }
 }
